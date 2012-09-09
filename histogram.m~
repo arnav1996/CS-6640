@@ -1,0 +1,17 @@
+function [h] = histogram(I, n, min, max)
+    diff = max - min;
+    binSize = diff/n;
+    h = zeros;
+    for i=1:size(I, 1)
+        for j=1:size(I, 2)
+            a = I(i, j);
+            bin = (a - min) * (1 / binSize);
+            bin = int32(bin);
+            h[bin] = h[bin] + 1;
+            h[bin] = h[bin] / n;
+        end
+    end
+
+
+
+    
