@@ -12,7 +12,9 @@ function h = histogram(I, n, min, max)
             h(bin) = (h(bin) + 1);
         end
     end
-    h = h/n;
+    h = h / (size(I, 1) * size(I, 2));
+        
+    
 
 
 
