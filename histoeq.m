@@ -37,7 +37,7 @@ end
 
  for i=1:size(I, 1)
      for j=1:size(I, 2)
-         for k=0:n-1
+         for k=1:n
              if (I(i, j) == k)
                  EI(i, j) = H(k);
              end
