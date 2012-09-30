@@ -1,0 +1,16 @@
+function EI = boxfilter(I, dim)
+
+bfilter = (1/9) * ones(dim, dim);
+a = (dim - 1)/2;
+b = (dim - 1)/2;
+acc = 0;
+offset = (m + 1)/2;
+for i=0:size(I,1)
+    for j=0:size(I, 2)
+        for m=-a:a
+            for n=-b:b
+                acc = acc + I(i + offset, j + bar) * bfilter(m + ((dim + 1)/2), n + ((dim + 1)/2));
+            end
+        end
+    end
+end

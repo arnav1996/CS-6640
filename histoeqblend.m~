@@ -1,2 +1,0 @@
-function EI = histoeqblend(I, n, min, max, alpha)
-EQI = (uint

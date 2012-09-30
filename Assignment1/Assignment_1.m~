@@ -1,0 +1,7 @@
+function [h] = histogram(I, n, min, max)
+    for i=1:size(I, 1)
+        for j=1:si
+
+image = imread('/Users/atulrungta/Desktop/Image Processing CS 6640/images/crowd.tif');
+
+    

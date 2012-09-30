@@ -33,7 +33,18 @@ end
  for i=1:n
     H(i) = floor(((cdf(i) - minCDF)/(sz - minCDF)) * (n-1));
  end
+ 
+%  x = 0:256;
+%  plot(x, H);
 %  disp(H);
+
+% for i=1:n
+%     H(i) = H(i)/sz;
+% end
+
+% x = 0:.00390625:1
+% plot(x,H);
+
 
  for i=1:size(I, 1)
      for j=1:size(I, 2)

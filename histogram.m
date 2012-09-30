@@ -14,7 +14,8 @@ function h = histogram(I, n, min, max)
     end
     h = h / (size(I, 1) * size(I, 2));
         
-    
+%     x = 0:.00390625:1
+%     plot(x,h);
 
 
 
