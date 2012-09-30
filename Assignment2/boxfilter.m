@@ -1,6 +1,6 @@
 function EI = boxfilter(I, dim)
 
-bfilter = (1/9) * ones(dim, dim);
+bfilter = (1/(dim*dim)) * ones(dim, dim);
 a = (dim - 1)/2;
 b = (dim - 1)/2;
 acc = 0;
