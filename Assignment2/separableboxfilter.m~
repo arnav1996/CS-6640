@@ -1,5 +1,5 @@
 function EI = separableboxfilter(I, dim)
-a = (1/ dim) * ones(dim, 1);
+a = (1/ dim*dim) * ones(dim, 1);
  
 b = (1/dim) * ones(1, dim);
 

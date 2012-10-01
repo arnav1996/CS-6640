@@ -1,0 +1,8 @@
+function GI = gaussianfilter(I)
+x = -6:6
+g = size(size(x) + 1, 1);
+disp(size(g));
+g = (1/sqrt(2 * pi * 4)) * exp(-.5 * power(( x/2),2 ))
+GI = I
+
+
