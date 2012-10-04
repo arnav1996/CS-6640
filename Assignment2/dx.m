@@ -13,6 +13,6 @@ X = I;
  end
  
  X = abs(X);
-
+X = uint8(X);
 
 
