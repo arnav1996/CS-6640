@@ -1,0 +1,12 @@
+function X = dx(I)
+Wdx = [-1, 0, 1];
+% Wdy = Wdx';
+X = I;
+ for i=1:size(I, 1)
+     for j=1:3
+      X(i+2, j) = Wdx(1) *    
+     end
+ end
+
+
+

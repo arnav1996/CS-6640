@@ -40,3 +40,8 @@ for i=0:size(I,1) - offset1
         acc1 = 0.0;
     end
 end
+
+mx = max(max(M));
+M = M/mx;
+M = M * 255;
+M = uint8(M);
