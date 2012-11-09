@@ -1,5 +1,5 @@
 function RI = rotation(I)
-theta = 60.0;
+theta = 30.0;
 rotMat = [cosd(theta) sind(theta) 0; -sind(theta) cosd(theta) 0; 0 0 1];
 prodMat = zeros(3, 1);
 posMat = zeros(1, 3);
