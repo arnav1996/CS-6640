@@ -1,17 +1,19 @@
 function MPS = mouseposition(I, TI)
 figure(1);
 clf;
-f = imagesc(I);
+ f = imagesc(I);
 axis image
 
-MP = ginput(3);
+MP = ginput(5);
+
 
 figure(2);
 clf;
-f = imagesc(TI);
+ f = imagesc(TI);
 axis image
 
-MPT = ginput(3);
+MPT = ginput(5);
+
 
 MPS = [MP; MPT];
 

@@ -1,0 +1,4 @@
+function val = rbf(X, Xi)
+
+sigma
+val = exp(-(power(pdist([X;Xi], 'euclidean'), 2))/power(sigma, 2));
