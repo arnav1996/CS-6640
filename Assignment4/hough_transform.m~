@@ -1,0 +1,20 @@
+function HT = hough_transform(I)
+
+theta = (-90:90);
+sigma = (-250:250);
+
+accMat = zeros(size(sigma), size(theta));
+
+for i=1:size(I,1)
+    for j=1:size(I,2)
+        if(I(i,j) > 0)
+            for k = -90:90
+                sigma = i*cosd(k) + j*sind(k);
+                sigma = floor(sigma);
+                accMat(sigma
+            end
+        end
+    end
+end
+
+HT = zeros(3, 3);
